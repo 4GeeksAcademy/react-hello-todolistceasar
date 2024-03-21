@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
@@ -30,7 +30,7 @@ const Home = () => {
 						<li>
 							{item} {""}
 							<i 
-							class="fa-solid fa-trash-can"
+							className="fa-solid fa-trash-can"
 								onClick={() => 
 								setTodos(
 									todos.filter(
@@ -49,5 +49,6 @@ const Home = () => {
 		</div>
 	);
 };
+
 
 export default Home;
